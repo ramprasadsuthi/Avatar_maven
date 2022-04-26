@@ -20,6 +20,7 @@ public class BaseMethods {
 	public void launchBrowser() {
 		System.setProperty("webdriver.chrome.driver", "D:\\chromedriver.exe");
 		driver = new ChromeDriver();
+		// This line is adding from GITHUB Server 
 	}
 	
 	public void launchERP() {
