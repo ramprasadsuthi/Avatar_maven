@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="0.406">
+    <testcase classname="Add" name="Addition of Two numbers" time="0.036">
+        <system-out><![CDATA[Given input 1000 and 200....................................................passed
+When calc a + b.............................................................passed
+Then validate the 1200......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Add" name="Addition of Two numbers 2" time="0.005">
+        <system-out><![CDATA[Given input 10 and 200......................................................passed
+When calc a + b.............................................................passed
+Then validate the 210.......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Add" name="Addition of Two numbers 3" time="0.01">
+        <failure message="expected:&lt;1500&gt; but was:&lt;500&gt;" type="junit.framework.AssertionFailedError"><![CDATA[Given input 1000 and 500....................................................passed
+When calc a + b.............................................................passed
+Then validate the 500.......................................................failed
+
+StackTrace:
+junit.framework.AssertionFailedError: expected:<1500> but was:<500>
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.failNotEquals(Assert.java:329)
+	at junit.framework.Assert.assertEquals(Assert.java:78)
+	at junit.framework.Assert.assertEquals(Assert.java:234)
+	at junit.framework.Assert.assertEquals(Assert.java:241)
+	at stepDefinition.Add1.print_the_result(Add1.java:24)
+	at ✽.validate the 500(file:///D:/Automation/Avatar_maven/Features/add1.feature:8)
+]]></failure>
+    </testcase>
+    <testcase classname="Add" name="Addition of Two numbers 4" time="0.006">
+        <system-out><![CDATA[Given input 2000 and 200....................................................passed
+When calc a + b.............................................................passed
+Then validate the 2200......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Add" name="Addition of Two numbers 5" time="0.007">
+        <system-out><![CDATA[Given input 1000 and 800....................................................passed
+When calc a + b.............................................................passed
+Then validate the 1800......................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
